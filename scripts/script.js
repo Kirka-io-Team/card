@@ -1,4 +1,4 @@
-const userID = "738748102311280681"; // Thay đổi thành ID Discord của bạn
+const userID = "1169111190824308768"; // Thay đổi thành ID Discord của bạn
 
 const elements = {
 	statusBox: document.querySelector(".status"),
