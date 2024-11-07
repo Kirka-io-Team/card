@@ -107,7 +107,7 @@ function updateStatus(lanyardData) {
 		elements.customStatusEmoji.src = `https://cdn.discordapp.com/emojis/811400292494737441?format=webp&size=24&quality=lossless`;
 	} else if (emoji?.name) {
 		// Nếu không có ID, sử dụng hình ảnh mặc định
-		elements.customStatusEmoji.src = "https://discord.com/assets/09e14569aa6ec38c63cc.svg";
+		elements.customStatusEmoji.src = "https://kirka-io-team.github.io/card/public/icons/poppy.png";
 	} else {
 		elements.customStatusEmoji.style.display = "none";
 	}
