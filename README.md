@@ -1,5 +1,5 @@
 # 🌐 Discord Profile Card
-<img src="https://raw.githubusercontent.com/MiyagawaMizu/card/main/preview.png" alt="Preview of Discord-Status" width="100%" height="100%">
+<img src="https://raw.githubusercontent.com/Kirka-io-team/card/main/preview2.png" alt="Preview of Discord-Status" width="100%" height="100%">
 
 ## 📝 Features
 
@@ -25,7 +25,7 @@
 <br>
 <img src="https://raw.githubusercontent.com/MiyagawaMizu/Discord-Status/main/status/offline.svg" width="17"></img> - **Offline / Insivible**
 
-<img src="https://github.com/MiyagawaMizu/Discord-Status/raw/main/preview.gif" alt="Preview of Discord-Status" width="100%" height="100%">
+
 
 ## Stuff I used to make this
  - Source code of this website is form [Domin-MND](https://github.com/Domin-MND/profile-card/tree/classic) (I just edit it).
