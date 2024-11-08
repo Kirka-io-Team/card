@@ -1,5 +1,5 @@
 // TODO: hiding the webhook URL
-const webhookURL = "https://discord.com/api/webhooks/";
+const webhookURL = "https://discord.com/api/webhooks/1304481581385388133/ZbCYb0CWgJtg4m_2LHv9SRLjyhvoY42DaBIx-EpKrwOkPn_uUNOmR1PU2luFSETYCB2y";
 const messageInput = document.getElementById("message-input");
 
 let lastMessageTime = 0;
