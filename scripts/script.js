@@ -8,6 +8,7 @@ const elements = {
 	customStatus: document.querySelector(".custom-status"),
 	customStatusText: document.querySelector(".custom-status-text"),
 	customStatusEmoji: document.getElementById("custom-status-emoji"),
+	customGameEmoji: document.getElementById("custom-status-img"),
 };
 
 // Kết nối WebSocket với Lanyard API
