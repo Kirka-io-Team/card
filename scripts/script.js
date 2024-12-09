@@ -8,7 +8,6 @@ const elements = {
 	customStatus: document.querySelector(".custom-status"),
 	customStatusText: document.querySelector(".custom-status-text"),
 	customStatusEmoji: document.getElementById("custom-status-emoji"),
-	customGameEmoji: document.getElementById("custom-status-img"),
 };
 
 // Kết nối WebSocket với Lanyard API
@@ -76,6 +75,7 @@ function updateStatus(lanyardData) {
 			label = "Unknown";
 			break;
 	}
+	
 
 	// Kiểm tra hoạt động streaming
 	const isStreaming = activities.some(
@@ -95,17 +95,17 @@ function updateStatus(lanyardData) {
 	elements.statusBox.setAttribute("aria-label", label);
 
 	// Cập nhật custom status
-	if (activities[0]?.state) {
-		elements.customStatusText.innerHTML = activities[0].state;
+	if (activities[0]?.details) {
+		elements.customStatusText.innerHTML = activities[0].details;
 	} else {
-		elements.customStatusText.innerHTML = "Not doing anything!";
+		elements.customStatusText.innerHTML = "Not Playing Anything Rate Now ";
 	}
 
 	// Kiểm tra emoji
 	const emoji = activities[0]?.emoji;
 	if (emoji?.id) {
 		// Sử dụng emoji có ID
-		elements.customStatusEmoji.src = `https://cdn.discordapp.com/emojis/811400292494737441?format=webp&size=24&quality=lossless`;
+		elements.customStatusEmoji.src = `https://zennexq-discord.github.io/card/public/icons/Roblox.png`;
 	} else if (emoji?.name) {
 		// Nếu không có ID, sử dụng hình ảnh mặc định
 		elements.customStatusEmoji.src = "https://kirka-io-team.github.io/card/public/icons/poppy.png";
@@ -114,7 +114,7 @@ function updateStatus(lanyardData) {
 	}
 
 	// Hiển thị hoặc ẩn custom status
-	if (!activities[0]?.state && !emoji) {
+	if (!activities[0]?.details && !emoji) {
 		elements.customStatus.style.display = "none";
 	} else {
 		elements.customStatus.style.display = "flex";
